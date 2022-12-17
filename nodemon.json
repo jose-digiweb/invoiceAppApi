@@ -1,0 +1,8 @@
+{
+  "ignore": [".git", "README.md", "node_modules/**/node_modules"],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "verbose": true,
+  "ext": "ts json yml yaml"
+}
