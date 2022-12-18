@@ -4,5 +4,5 @@
     "NODE_ENV": "development"
   },
   "verbose": true,
-  "ext": "ts json yml yaml"
+  "ext": "ts json yaml"
 }

@@ -26,4 +26,4 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan('tiny'));
 
 // Initialize the app router
-app.use(appRouter);
+app.use('/api/v1', appRouter);

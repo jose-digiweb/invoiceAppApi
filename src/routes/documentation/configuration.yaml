@@ -1,0 +1,39 @@
+openapi: 3.0.0
+
+info:
+  title: Invoice app API documentation
+  description: Create and manage invoices
+  version: 1.0.0
+  contact:
+    email: josefurtado.digital@gmail.com
+    url: 'https://github.com/jose-digiweb'
+
+servers:
+  - url: http://localhost:5000/api/v1
+    description: The base api endpoint
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+
+paths:
+  /:
+    get:
+      tags:
+        - Base route
+      summary: Gets the base route
+      description: The base route that responds with 200 code and success message
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: string
